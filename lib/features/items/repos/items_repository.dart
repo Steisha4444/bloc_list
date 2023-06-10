@@ -1,7 +1,7 @@
 import 'package:bloc_list/features/items/models/item_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class ItemsRepo {
+class ItemsRepository {
   static final _db = FirebaseFirestore.instance;
 
   static Future<void> addItem(Item item) async {
@@ -13,7 +13,7 @@ class ItemsRepo {
   static Future<List<Item>> getItems() async {
     final snapshot = await _db.collection('items').get();
 
-    return snapshot.docs.map((e) => Item.fromSnapshot(e)).toList();
+    return snapshot.docs.map((e) => Item.fromMap(e.data())).toList();
   }
 
   static Future<void> deleteItem(Item repo) async {

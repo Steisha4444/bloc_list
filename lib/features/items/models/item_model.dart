@@ -1,7 +1,5 @@
 import 'dart:convert';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-
 class Item {
   final int id;
   final String name;
@@ -28,13 +26,6 @@ class Item {
     return other.id == id && other.name == name;
   }
 
-  factory Item.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> document) {
-    final data = document.data()!;
-    return Item(
-      id: data['id'],
-      name: data['name'],
-    );
-  }
   @override
   int get hashCode => id.hashCode ^ name.hashCode;
 
