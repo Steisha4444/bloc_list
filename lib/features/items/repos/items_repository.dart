@@ -1,5 +1,5 @@
-import 'package:bloc_list/features/items/models/item_model.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:bloc_list/features/items/models/item_model.dart';
 
 class ItemsRepository {
   static final _db = FirebaseFirestore.instance;

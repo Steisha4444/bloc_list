@@ -1,5 +1,5 @@
-import 'package:bloc_list/features/items/models/item_model.dart';
 import 'package:flutter/material.dart';
+import 'package:bloc_list/features/items/models/item_model.dart';
 
 class ItemsLogoList extends StatelessWidget {
   final bool showScrollbar;
@@ -26,8 +26,8 @@ class ItemsLogoList extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
               height: imageHeight,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Image.asset(
                 'assets/images/logo.png',
               ),

@@ -1,6 +1,6 @@
-import 'package:bloc_list/features/items/bloc/items_bloc.dart';
-import 'package:bloc_list/features/items/ui/items_view.dart';
 import 'package:flutter/material.dart';
+import 'package:bloc_list/features/items/ui/items_view.dart';
+import 'package:bloc_list/features/items/bloc/items_bloc.dart';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
 
