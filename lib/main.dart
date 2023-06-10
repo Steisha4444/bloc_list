@@ -1,4 +1,3 @@
-import 'package:bloc_list/features/items/ui/items_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
